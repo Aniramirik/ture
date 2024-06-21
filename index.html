@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueSnap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TrueSnap</h1>
+    </header>
+    <main>
+        <div id="auth-container" class="container">
+            <h2>Sign Up / Login</h2>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="signUp()">Sign Up</button>
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="camera-container" class="container" style="display:none;">
+            <h2>Take a Photo</h2>
+            <video id="video" width="320" height="240" autoplay></video>
+            <button onclick="takePhoto()">Capture Photo</button>
+            <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+            <div id="photo">
+                <img id="photo-img" src="" alt="Your photo will appear here" style="display:none;">
+            </div>
+            <button id="logout" onclick="logout()">Logout</button>
+        </div>
+        <div id="feed-container" class="container" style="display:none;">
+            <h2>Feed</h2>
+            <div id="feed"></div>
+        </div>
+        <div id="switch-account-container" class="container" style="display:none;">
+            <h2>Switch Account</h2>
+            <input type="email" id="switch-email" placeholder="Email" required>
+            <input type="password" id="switch-password" placeholder="Password" required>
+            <button onclick="switchAccount()">Switch Account</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 TrueSnap. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
